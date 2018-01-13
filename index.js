@@ -8,7 +8,7 @@ function takeANumber(katzDeliLine,person){
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0){
     var first_person = katzDeliLine[0]
-    katzDeliLine.unshift(first_person);
+    delete katzDeliLine[0];
     return(`Currently serving ${first_person}.`);
   }
   else{
