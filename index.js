@@ -7,8 +7,8 @@ function takeANumber(katzDeliLine,person){
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0){
-     first_person = katzDeliLine[0]
-     katzDeliLine.unshift(first_person);
+    first_person = katzDeliLine[0]
+    katzDeliLine.unshift(first_person);
     return(`Currently serving ${first_person}.`);
   }
   else{
